@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="CSS\bootstrap.css">
+    <link rel="stylesheet" href="CSS\custom.css">
+
+</head>
+
+
+<body>
+
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div id="home">
+                <title>{{pageTitle}}</title>
+                <center>
+                    <h1>{{nameCAPS}}</h1>
+                    <br />
+                    <p class="iLike">Hi there, I {{hobbiesMessage}}</P>
+                    <br/><br/>
+                    Experience &nbsp;&nbsp;|&nbsp;&nbsp; Education &nbsp;&nbsp;|&nbsp;&nbsp; Skills &nbsp;&nbsp;|&nbsp;&nbsp; Projects &nbsp;&nbsp;|&nbsp;&nbsp; Interests
+                    <br/><br/><br/>
+                    Resume &nbsp;&nbsp;|&nbsp;&nbsp; Github &nbsp;&nbsp;|&nbsp;&nbsp; LinkedIn
+
+                    <vue-typer text='Hello World! I was registered globally!'></vue-typer>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <div id="dateLoaded">
+        <p>
+            <center id="home">
+                <img src="Images\Logo.png" alt="Bryan Rojas Logo">
+                <br/><br/>Bryan Rojas
+            </center>
+        </p>
+    </div>
+
+</body>
+
+</html>
+
+<script src="JavaScript\vue.js"></script>
+<script src="JavaScript\vue-typer.js"></script>
+<script>
+
+    var home = new Vue({
+        el: '#home',
+        data: {
+            pageTitle: 'Bryan Rojas - Personal Site',
+            nameCAPS: 'BRYAN ROJAS',
+            hobbiesMessage: 'like to code.'
+        }
+    });
+</script>
